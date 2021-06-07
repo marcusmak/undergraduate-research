@@ -1,0 +1,164 @@
+[
+    {
+        "outputFile": "D:\\Academic\\Work Space\\UROP\\2100\\MultiSensorCollector\\MultiSensorCollector\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 65,
+                    "endOffset": 116
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\b651c6cf58d9bba35b2f240188ef446fe2590c82\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 121,
+                    "endColumn": 60,
+                    "endOffset": 177
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\b651c6cf58d9bba35b2f240188ef446fe2590c82\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 121,
+                        "endColumn": 60,
+                        "endOffset": 177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 182,
+                    "endColumn": 65,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\b651c6cf58d9bba35b2f240188ef446fe2590c82\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endColumn": 65,
+                        "endOffset": 243
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 66,
+                    "endOffset": 310
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\b651c6cf58d9bba35b2f240188ef446fe2590c82\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 66,
+                        "endOffset": 310
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\Marcus\\Downloads\\Academic\\Work Space\\UROP\\2100\\MultiSensorCollector\\MultiSensorCollector\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 65,
+                    "endOffset": 116
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\d72c54f94b96289784d39b46e22532692b86bb3b\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 121,
+                    "endColumn": 60,
+                    "endOffset": 177
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\d72c54f94b96289784d39b46e22532692b86bb3b\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 121,
+                        "endColumn": 60,
+                        "endOffset": 177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 182,
+                    "endColumn": 65,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\d72c54f94b96289784d39b46e22532692b86bb3b\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endColumn": 65,
+                        "endOffset": 243
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 66,
+                    "endOffset": 310
+                },
+                "from": {
+                    "file": "C:\\Users\\Marcus\\.android\\build-cache\\d72c54f94b96289784d39b46e22532692b86bb3b\\output\\res\\values-v24\\values-v24.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 66,
+                        "endOffset": 310
+                    }
+                }
+            }
+        ]
+    }
+]

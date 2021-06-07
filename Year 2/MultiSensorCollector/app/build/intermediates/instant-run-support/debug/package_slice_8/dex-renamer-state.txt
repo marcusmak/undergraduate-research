@@ -1,0 +1,4 @@
+#Wed Nov 21 00:04:21 CST 2018
+base.0=/home/tanjiajie/Workspaces/AndroidStudio/MultiSensorCollector/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8
+renamed.0=classes.dex
+file.0=/home/tanjiajie/Workspaces/AndroidStudio/MultiSensorCollector/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex

@@ -1,0 +1,194 @@
+package hk.ust.mtrec.multisensorcollector.sensor;
+
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
+import android.util.Log;
+import android.widget.ImageView;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import hk.ust.mtrec.multisensorcollector.persistence.PersistenceManager;
+import hk.ust.mtrec.multisensorcollector.sensor.datahandler.PersistenceSensorDataHandler;
+import hk.ust.mtrec.multisensorcollector.sensor.general.SensorInfo;
+import hk.ust.mtrec.multisensorcollector.sensor.general.StandardSensorProxy;
+import hk.ust.mtrec.multisensorcollector.sensor.wifi.WifiSensorProxy;
+import hk.ust.mtrec.multisensorcollector.sensor.gps.LocationSensorProxy;
+import hk.ust.mtrec.multisensorcollector.sensor.gps.GLocationSensorProxy;
+
+
+/**
+ * Created by tanjiajie on 2/3/17.
+ */
+public class AppSensorManager {
+
+    public static final int ANDROID_SENSOR_PREFIX = 20000;
+    public static final int TYPE_ACCELEROMETER = Sensor.TYPE_ACCELEROMETER + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_MAGNETIC_FIELD = Sensor.TYPE_MAGNETIC_FIELD + ANDROID_SENSOR_PREFIX;
+//    public static final int TYPE_ORIENTATION = Sensor.TYPE_ORIENTATION + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_GYROSCOPE = Sensor.TYPE_GYROSCOPE + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_LIGHT = Sensor.TYPE_LIGHT + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_PRESSURE = Sensor.TYPE_PRESSURE + ANDROID_SENSOR_PREFIX;
+//    public static final int TYPE_TEMPERATURE = Sensor.TYPE_TEMPERATURE + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_PROXIMITY = Sensor.TYPE_PROXIMITY + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_GRAVITY = Sensor.TYPE_GRAVITY + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_LINEAR_ACCELERATION = Sensor.TYPE_LINEAR_ACCELERATION + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_ROTATION_VECTOR = Sensor.TYPE_ROTATION_VECTOR + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_RELATIVE_HUMIDITY = Sensor.TYPE_RELATIVE_HUMIDITY + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_AMBIENT_TEMPERATURE = Sensor.TYPE_AMBIENT_TEMPERATURE + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_MAGNETIC_FIELD_UNCALIBRATED = Sensor.TYPE_MAGNETIC_FIELD_UNCALIBRATED + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_GAME_ROTATION_VECTOR = Sensor.TYPE_GAME_ROTATION_VECTOR + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_GYROSCOPE_UNCALIBRATED = Sensor.TYPE_GYROSCOPE_UNCALIBRATED + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_SIGNIFICANT_MOTION = Sensor.TYPE_SIGNIFICANT_MOTION + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_STEP_DETECTOR = Sensor.TYPE_STEP_DETECTOR + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_STEP_COUNTER = Sensor.TYPE_STEP_COUNTER + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_GEOMAGNETIC_ROTATION_VECTOR = Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR + ANDROID_SENSOR_PREFIX;
+    public static final int TYPE_HEART_RATE = Sensor.TYPE_HEART_RATE + ANDROID_SENSOR_PREFIX;
+//    public static final int TYPE_TILT_DETECTOR = Sensor.TYPE_TILT_DETECTOR + ANDROID_SENSOR_PREFIX;
+//    public static final int TYPE_WAKE_GESTURE = Sensor.TYPE_WAKE_GESTURE + ANDROID_SENSOR_PREFIX;
+//    public static final int TYPE_GLANCE_GESTURE = Sensor.TYPE_GLANCE_GESTURE + ANDROID_SENSOR_PREFIX;
+//    public static final int TYPE_PICK_UP_GESTURE = Sensor.TYPE_PICK_UP_GESTURE + ANDROID_SENSOR_PREFIX;
+//    public static final int TYPE_WRIST_TILT_GESTURE = Sensor.TYPE_WRIST_TILT_GESTURE + ANDROID_SENSOR_PREFIX;
+
+    public static final int TYPE_WIFI = 10000;
+    private static final int LOCATION_PREFIX = 30000;
+    public static final int TYPE_GPS = LOCATION_PREFIX+1;
+    public static final int TYPE_NETWORK = LOCATION_PREFIX+2;
+    public static final int TYPE_GLOCATION = LOCATION_PREFIX+3;
+
+
+
+    public static final String[] ACCELEROMETER_KEYS = {"ax", "ay", "az"};
+    public static final String[] LINEAR_ACCELERATION_KEYS = {"ax", "ay", "az"};
+    public static final String[] GRAVITY_KEYS = {"Gx", "Gy", "Gz"};
+
+    public static final String[] MAGNETIC_FIELD_KEYS = {"Bx", "By", "Bz"};
+    public static final String[] UNCALIBRATED_MAGNETIC_FIELD_KEYS = {"Bx", "By", "Bz"};
+
+    public static final String[] GYROSCOPE_KEYS = {"wx", "wy", "wz"};
+    public static final String[] UNCALIBRATED_GYROSCOPE_KEYS = {"wx", "wy", "wz"};
+
+    public static final String[] ROTATION_VECTOR_KEYS = {"rx", "ry", "rz", "scale"};
+
+    public static final String[] LIGHT_KEYS = {"l"};
+    public static final String[] PRESSURE_KEYS = {"p"};
+    public static final String[] STEP_COUNTER_KEYS = {"n"};
+
+    public static final Map<Integer, SensorInfo> SENSOR_INFO_MAP = new HashMap<>();
+
+    static {
+        SENSOR_INFO_MAP.put(TYPE_WIFI, new SensorInfo(TYPE_ACCELEROMETER, "wifi", null));
+        SENSOR_INFO_MAP.put(TYPE_GPS, new SensorInfo(TYPE_GPS, "gps", null));
+        SENSOR_INFO_MAP.put(TYPE_NETWORK, new SensorInfo(TYPE_NETWORK, "gps", null));
+        SENSOR_INFO_MAP.put(TYPE_GLOCATION, new SensorInfo(TYPE_GLOCATION, "gps", null));
+        SENSOR_INFO_MAP.put(TYPE_ACCELEROMETER, new SensorInfo(TYPE_ACCELEROMETER, "accelerometer", ACCELEROMETER_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_LINEAR_ACCELERATION, new SensorInfo(TYPE_LINEAR_ACCELERATION, "linearaccelerometer", LINEAR_ACCELERATION_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_GRAVITY, new SensorInfo(TYPE_GRAVITY, "gravity", GRAVITY_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_MAGNETIC_FIELD, new SensorInfo(TYPE_MAGNETIC_FIELD, "magneticfield", MAGNETIC_FIELD_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_MAGNETIC_FIELD_UNCALIBRATED, new SensorInfo(TYPE_MAGNETIC_FIELD_UNCALIBRATED, "uncalimagneticfield", UNCALIBRATED_MAGNETIC_FIELD_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_GYROSCOPE, new SensorInfo(TYPE_GYROSCOPE, "gyroscope", GYROSCOPE_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_GYROSCOPE_UNCALIBRATED, new SensorInfo(TYPE_GYROSCOPE_UNCALIBRATED, "uncaligyroscope", UNCALIBRATED_GYROSCOPE_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_ROTATION_VECTOR, new SensorInfo(TYPE_ROTATION_VECTOR, "rotationvector", ROTATION_VECTOR_KEYS));
+//        SENSOR_INFO_MAP.put(TYPE_LIGHT, new SensorInfo(TYPE_LIGHT, "light", LIGHT_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_PRESSURE, new SensorInfo(TYPE_PRESSURE, "pressure", PRESSURE_KEYS));
+        SENSOR_INFO_MAP.put(TYPE_STEP_COUNTER, new SensorInfo(TYPE_STEP_COUNTER, "stepcounter", STEP_COUNTER_KEYS));
+    }
+
+    private static long latestElapsedTimeUs = 0L;
+    private Context context;
+
+    private SensorManager sensorManager;
+    private PersistenceManager persistenceManager;
+
+    private final List<SensorProxy> sensors = new ArrayList<>();
+
+    public AppSensorManager(Context context) {
+        this.context = context;
+        this.sensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+        this.persistenceManager = PersistenceManager.getInstance();
+    }
+
+    public void loadWifiSensor() {
+        SensorProxy sensor = new WifiSensorProxy(context, TYPE_WIFI);
+        sensors.add(sensor);
+        Log.i("SensorMgt", "Wi-Fi sensor is loaded.");
+    }
+
+    public void loadLocationSensors() {
+        int i;
+        for (i = 1; i<=2 ; ++i) {
+            SensorProxy sensor = new LocationSensorProxy(context, LOCATION_PREFIX+i);//provider);
+            sensors.add(sensor);
+            Log.i("SensorMgt", "Location sensor with type number " + (LOCATION_PREFIX+i) + " is loaded.");
+        }
+
+        SensorProxy sensor = new GLocationSensorProxy(context, TYPE_GLOCATION);
+        sensors.add(sensor);
+        Log.i("SensorMgt", "Location sensor with type number " + TYPE_GLOCATION + " is loaded.");
+    }
+
+
+    public void loadStandardSensors() {
+        for (Sensor aSensor : sensorManager.getSensorList(Sensor.TYPE_ALL)) {
+            Log.v("SensorMgt", "sensor [" + aSensor.getName() + "] is detected. detail = " + aSensor.toString());
+            SensorProxy sensor = new StandardSensorProxy(sensorManager, aSensor, aSensor.getType() + ANDROID_SENSOR_PREFIX);
+            if (SENSOR_INFO_MAP.containsKey(sensor.getType())) {
+                sensors.add(sensor);
+                Log.i("SensorMgt", "sensor [" + aSensor.getName() + "] is loaded.");
+            }
+        }
+    }
+
+    public void startAllSensors() {
+        for (SensorProxy sensor : sensors) {
+            if (sensor.isEnabled()) {
+                Log.i("SensorMgt", "sensor [" + sensor.getSensorName() + "] is enabled.");
+                sensor.start();
+            } else {
+
+                Log.i("SensorMgt", "sensor [" + sensor.getSensorName() + "] is disabled.");
+            }
+        }
+    }
+
+
+    public void stopAllSensors(boolean gpsMode) {
+        for (SensorProxy sensor : sensors) {
+            if (gpsMode && sensor.getType() == TYPE_GLOCATION)
+                continue;
+            sensor.stop();
+            Log.i("SensorMgt", "sensor [" + sensor.getSensorName() + "] is stopped.");
+        }
+    }
+
+    public List<SensorProxy> getSensors() {
+        return sensors;
+    }
+
+    public List<Integer> getAllSupportedSensorTypes() {
+        List<Integer> allTypes = new ArrayList<>();
+        for (SensorProxy sensor : sensors) {
+            allTypes.add(sensor.getType());
+        }
+        return allTypes;
+    }
+
+    public SensorProxy getSensor(int type){
+        for (SensorProxy sensor : sensors) {
+            if (sensor.getType() == type)
+                return sensor;
+        }
+        return null;
+    }
+
+    public static synchronized void setLatestElapsedTimeUs(long timestamp) {
+        latestElapsedTimeUs = timestamp;
+    }
+
+    public static synchronized long getLatestElapsedTimeUs() {
+        return latestElapsedTimeUs;
+    }
+}

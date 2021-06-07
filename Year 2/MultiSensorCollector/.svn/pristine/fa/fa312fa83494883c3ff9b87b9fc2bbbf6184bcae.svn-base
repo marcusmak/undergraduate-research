@@ -1,0 +1,136 @@
+package hk.ust.mtrec.multisensorcollector.widget.map;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.graphics.PointF;
+import android.os.Vibrator;
+import android.support.design.widget.CoordinatorLayout;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import hk.ust.mtrec.multisensorcollector.R;
+import hk.ust.mtrec.multisensorcollector.bean.LabelData;
+import hk.ust.mtrec.multisensorcollector.persistence.PersistenceManager;
+import hk.ust.mtrec.multisensorcollector.persistence.Persistencer;
+
+/**
+ * Created by tanjiajie on 2/12/17.
+ */
+public class LabelDisplayView extends FrameLayout {
+
+    private static final int DOT_WIDTH = 36;
+    private static final int DOT_HEIGHT = 36;
+
+    private List<Dot> dotList = new ArrayList<>();
+
+    private float canvasX = 0;
+    private float canvasY = 0;
+
+    private Dot focused;
+
+    public LabelDisplayView(Context context) {
+        this(context, null);
+    }
+
+    public LabelDisplayView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        context.registerReceiver(new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                cancelFocusedDot();
+            }
+        }, new IntentFilter(MapWidget.BROADCAST_INTENT_MAP_CLICK));
+    }
+
+    public void addDot(final float absX, final float absY, final float scale) {
+        Dot dot = new Dot(getContext());
+        dot.absCoord = new PointF(absX, absY);
+        dot.canvasCoord = new PointF(absX / scale, absY / scale);
+        dot.setImageResource(R.drawable.marked_dot);
+        dot.setLayoutParams(new CoordinatorLayout.LayoutParams(DOT_WIDTH, DOT_HEIGHT));
+        dot.setX(canvasX + absX - DOT_WIDTH / 2);
+        dot.setY(canvasY + absY - DOT_HEIGHT / 2);
+        dotList.add(dot);
+        dot.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cancelFocusedDot();
+                Dot curDot = (Dot) v;
+                focused = curDot;
+                curDot.setImageResource(R.drawable.selected_marked_dot);
+                Vibrator vibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
+                long[] pattern = {100, 100};
+                vibrator.vibrate(pattern, 1);
+            }
+        });
+        addView(dot);
+    }
+
+    public void move(final float offX, final float offY) {
+        for (Dot dot : dotList) {
+            dot.setX(dot.getX() + offX);
+            dot.setY(dot.getY() + offY);
+        }
+        canvasX += offX;
+        canvasY += offY;
+    }
+
+    public void zoom(final float scale) {
+        for (Dot dot : dotList) {
+            dot.setX(canvasX + dot.canvasCoord.x * scale - DOT_WIDTH / 2);
+            dot.setY(canvasY + dot.canvasCoord.y * scale - DOT_HEIGHT / 2);
+        }
+    }
+
+    public boolean hasFocusedDot() {
+        return focused != null;
+    }
+
+    public void cancelFocusedDot() {
+        if (hasFocusedDot()) {
+            focused.setImageResource(R.drawable.marked_dot);
+            focused = null;
+        }
+    }
+
+    public void deleteFocusedDot() {
+        dotList.remove(focused);
+        removeView(focused);
+    }
+
+    public void deleteAllDots() {
+        for (Dot dot : dotList) {
+            removeView(dot);
+        }
+        dotList.clear();
+    }
+
+    public PointF getAbsFocusedPts() {
+        if (focused == null)
+            return null;
+        return focused.absCoord;
+    }
+
+    private class Dot extends ImageView {
+
+        PointF absCoord;
+        PointF canvasCoord;
+
+        public Dot(Context context) {
+            super(context);
+        }
+
+        public Dot(Context context, AttributeSet attrs) {
+            super(context, attrs);
+        }
+    }
+
+}

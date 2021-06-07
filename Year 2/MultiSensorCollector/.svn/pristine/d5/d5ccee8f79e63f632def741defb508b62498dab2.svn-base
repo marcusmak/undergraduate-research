@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hk.ust.mtrec.multisensorcollector.MultiSensorCollector">
+
+    <item android:id="@+id/upload"
+        android:title="Upload"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/empty"
+        android:title="Clean ALL data"
+        android:orderInCategory="200" />
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:orderInCategory="300" />
+
+</menu>

@@ -1,0 +1,4 @@
+#Wed Dec 18 22:27:24 CST 2019
+base.0=D\:\\Academic\\Work Space\\UROP\\2100\\MultiSensorCollector\\MultiSensorCollector\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\Academic\\Work Space\\UROP\\2100\\MultiSensorCollector\\MultiSensorCollector\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

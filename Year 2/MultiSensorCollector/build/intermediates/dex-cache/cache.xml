@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\common-1.0.0_26d8c5f330504fec73b3f4c3638b61924311f9ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\d80e24bfb4641e3af9dd2cf9a1cab021de25af4a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5b9f57b1fb76487516b73b908f54c60c48202d84">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_12b517569f4176bb3a254d5ee00a9d34ed5890ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\20ec85e473c3bb519634727c79b641b594d13bec\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_462a6e68b444938d62eaa90c322887eb8bf62927.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\d4da20e14c8b7b811f43a97adf45e8ed0500dc67\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3fc468ff4de5f9aa195d8749f2166c2f32f0cdf">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_a188360a976c4af5a3bfb58f2c6b308d41826f07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\cdb36a215b7fcfa6a0a6da3be0d912fc9593b2a8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_621c8c61676d95198cb3fc73efef788645405e40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\466724e55a2aaead6f28317aa699a43f856faff6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25cdd380f0a1b2f67a0b7253bbf1f343df981e5e">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_c308e15e155e1d3e59b64902d27c4f81ba8106c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\21b957ec3f2f9fa719dbeedc8e150ba40514f13d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_c378c8377be79a6c6e7159b24dc90f7d76c769d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\3a0730c6d8865733e186d04dded903f977e50448\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_a4e0e4cbbebc564c16c6b73f2e330e5610be72f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\d72c54f94b96289784d39b46e22532692b86bb3b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_67b252bdd651bbda825b9e4119161c1e279dfce3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\support-annotations-26.1.0_80a8e63392405c9002df7e5fd32e16257d73e520.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\68965907e463c9b7474eb8bbf34037d25f830e76\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="af171b7137f78a2c3062cb23e3535a0697d75c32">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_e927720ffe8c39138b346d91fc01cedb209664af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\4fd602502b9e49e425b1f0fb88fe2c730a7db161\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_dac7dc623a403fa169f3b29aeec57adf30266586.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\83a49eca6b94ffcb6da15bb1f4d7d5d439d77d89\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_9ba1a7311f2089095ce926f961576fda76ed59dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\common-1.0.0_f7cd0491dbba5099f02dbb72f859fbc3e646a4ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Marcus\.android\build-cache\8cc25cf74054460bc4209f8f5b5bcccd865db871\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9d0ff1960f148dafff5b945e8596c060ff3cf88e">
+        <dex dex="C:\Users\Marcus\Downloads\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\build\intermediates\pre-dexed\debug\classes_41b1135aa7ba47921a95161aaab1ffa450a5a807.jar" />
+    </item>
+
+</items>

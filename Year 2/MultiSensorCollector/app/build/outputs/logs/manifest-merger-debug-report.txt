@@ -1,0 +1,147 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+application
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:5:5-17:19
+MERGED from [com.android.support:design:23.4.0] C:\Users\Marcus\.android\build-cache\e4828e9a6a9f59f5f41ad827c2e5d1ec5b114944\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Marcus\.android\build-cache\bf11655f82ee6389e527bb38431c010f082e8d86\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Marcus\.android\build-cache\a09370e81567d7d4058d774d3a6cad2cede85111\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Marcus\.android\build-cache\67470ee7ec2d618ec34f39d28c29c8c09628818a\output\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Marcus\.android\build-cache\dab22bd0caf8a55b706d82356753ae81e254d364\output\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Marcus\.android\build-cache\881d4836a626335326fdb20625c638b45bd87ef0\output\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Marcus\.android\build-cache\554adca94a22787455ac5be342c443e3f14d1739\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Marcus\.android\build-cache\3ba15e8e83f140ab0d707a69446eebf4cd9b820e\output\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Marcus\.android\build-cache\77bc3834bf15e1d32415045ca0be6a768f1098be\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcus\.android\build-cache\39456e9721d6a453e0b63e36b78363d22f1b2369\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcus\.android\build-cache\b651c6cf58d9bba35b2f240188ef446fe2590c82\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcus\.android\build-cache\5233c0ca4772b8ac03f6f1d02a65b020b2efacc1\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcus\.android\build-cache\3bf139b3dfac8673eba4aa2ec77eae4b7133e3c0\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcus\.android\build-cache\01e5c1f4406f7f17fc7402c673ed16e6a2a2c5c1\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcus\.android\build-cache\f44b06ed480b9aaa552534e5bf690964ac4d51bb\output\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcus\.android\build-cache\b39b4cb39b712ffe550b5f06544080af10b688e5\output\AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:9:9-35
+	android:allowBackup
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:10:9-40
+activity#hk.ust.mtrec.multisensorcollector.MultiSensorCollector
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:11:9-16:20
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:11:19-55
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:12:13-15:29
+action#android.intent.action.MAIN
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:13:17-69
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:14:17-77
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:14:27-74
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:19:5-76
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:19:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:20:5-76
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:20:22-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:21:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:22:22-76
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:23:5-83
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:23:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:24:5-80
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:24:22-78
+uses-permission#android.permission.INTERNET
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:25:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:26:5-66
+	android:name
+		ADDED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml:26:22-63
+uses-sdk
+INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:23.4.0] C:\Users\Marcus\.android\build-cache\e4828e9a6a9f59f5f41ad827c2e5d1ec5b114944\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Marcus\.android\build-cache\c43dc44dbb45349933dfb6d089b0dea1fa6e79f0\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Marcus\.android\build-cache\bf11655f82ee6389e527bb38431c010f082e8d86\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Marcus\.android\build-cache\a09370e81567d7d4058d774d3a6cad2cede85111\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Marcus\.android\build-cache\67470ee7ec2d618ec34f39d28c29c8c09628818a\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Marcus\.android\build-cache\dab22bd0caf8a55b706d82356753ae81e254d364\output\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Marcus\.android\build-cache\881d4836a626335326fdb20625c638b45bd87ef0\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Marcus\.android\build-cache\554adca94a22787455ac5be342c443e3f14d1739\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Marcus\.android\build-cache\3ba15e8e83f140ab0d707a69446eebf4cd9b820e\output\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Marcus\.android\build-cache\77bc3834bf15e1d32415045ca0be6a768f1098be\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcus\.android\build-cache\39456e9721d6a453e0b63e36b78363d22f1b2369\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcus\.android\build-cache\b651c6cf58d9bba35b2f240188ef446fe2590c82\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcus\.android\build-cache\5233c0ca4772b8ac03f6f1d02a65b020b2efacc1\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcus\.android\build-cache\3bf139b3dfac8673eba4aa2ec77eae4b7133e3c0\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcus\.android\build-cache\01e5c1f4406f7f17fc7402c673ed16e6a2a2c5c1\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcus\.android\build-cache\f44b06ed480b9aaa552534e5bf690964ac4d51bb\output\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcus\.android\build-cache\b39b4cb39b712ffe550b5f06544080af10b688e5\output\AndroidManifest.xml:20:5-22:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Marcus\.android\build-cache\bf11655f82ee6389e527bb38431c010f082e8d86\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Academic\Work Space\UROP\2100\MultiSensorCollector\MultiSensorCollector\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Marcus\.android\build-cache\881d4836a626335326fdb20625c638b45bd87ef0\output\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Marcus\.android\build-cache\881d4836a626335326fdb20625c638b45bd87ef0\output\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Marcus\.android\build-cache\881d4836a626335326fdb20625c638b45bd87ef0\output\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Marcus\.android\build-cache\881d4836a626335326fdb20625c638b45bd87ef0\output\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Marcus\.android\build-cache\77bc3834bf15e1d32415045ca0be6a768f1098be\output\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Marcus\.android\build-cache\77bc3834bf15e1d32415045ca0be6a768f1098be\output\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Marcus\.android\build-cache\77bc3834bf15e1d32415045ca0be6a768f1098be\output\AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Marcus\.android\build-cache\39456e9721d6a453e0b63e36b78363d22f1b2369\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcus\.android\build-cache\b651c6cf58d9bba35b2f240188ef446fe2590c82\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcus\.android\build-cache\5233c0ca4772b8ac03f6f1d02a65b020b2efacc1\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcus\.android\build-cache\3bf139b3dfac8673eba4aa2ec77eae4b7133e3c0\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcus\.android\build-cache\01e5c1f4406f7f17fc7402c673ed16e6a2a2c5c1\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcus\.android\build-cache\f44b06ed480b9aaa552534e5bf690964ac4d51bb\output\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Marcus\.android\build-cache\39456e9721d6a453e0b63e36b78363d22f1b2369\output\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Marcus\.android\build-cache\39456e9721d6a453e0b63e36b78363d22f1b2369\output\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcus\.android\build-cache\b39b4cb39b712ffe550b5f06544080af10b688e5\output\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcus\.android\build-cache\b39b4cb39b712ffe550b5f06544080af10b688e5\output\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcus\.android\build-cache\b39b4cb39b712ffe550b5f06544080af10b688e5\output\AndroidManifest.xml:26:13-58
